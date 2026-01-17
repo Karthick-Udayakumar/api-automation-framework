@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestfulBooker Smoke Suite" parallel="false">
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.BookingTests">
+                <methods>
+                    <include name="testCreateBooking"/>
+                    <include name="testGetBookingById"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
